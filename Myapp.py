@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import sklearn
 from PIL import Image
 
 ##load the model which you save in the pickle format
@@ -17,6 +18,7 @@ def prediction(bedrooms,bathrooms,sqft_lot, floors, view, condition,grade, yr_bu
 
 ## creating main function which give the streamlit interface
 def main():
+    st.set_page_config(page_title="House-Prediction",page_icon=":smiley:")
     img=Image.open("home.jpg")
     st.image(img)
     st.title("House Price Prediction")
