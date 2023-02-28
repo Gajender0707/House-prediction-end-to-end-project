@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-import sklearn
+# import sklearn
 from PIL import Image
 
 ##load the model which you save in the pickle format
